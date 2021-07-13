@@ -1,1 +1,33 @@
 //
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.gallery {
+    display: flex;
+    justify-content: space-around;
+
+    .card {
+        width: calc(100% / 3 - 20px);
+        margin: 20px 10px;
+        padding: 10px;
+        border: 1px solid rgba(94, 1, 94, 0.863);
+        border-radius: 5px;
+        .poster {
+            text-align: center;
+            img {
+                height: 300px;
+                width: 400px;
+                object-fit: contain;
+            }
+        }
+
+        h2 {
+            margin: 5px 0;
+        }
+        p {
+            margin: 5px 0;
+        }
+    }
+}
